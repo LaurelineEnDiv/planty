@@ -8,6 +8,10 @@
  Version:      1.0.0
 */
 
+.wpforms-field-label {
+    color:red;
+}
+
 
 .strong-view.wpmtst-default .wpmtst-testimonial {
     border: none;

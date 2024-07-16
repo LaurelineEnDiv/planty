@@ -8,12 +8,22 @@
  Version:      1.0.0
 */
 
-.wpforms-field-label {
-    color:red;
+[data-vertical-spacing*="bottom"], .has-background:is(p, .wp-block-group) {
+    padding-bottom: 0 !important; 
+}
+
+.strong-view.wpmtst-default .wpmtst-testimonial, .strong-view.wpmtst-default .wpmtst-testimonial-image img {
+    border: none !important;
+}
+
+.testimonial-name {
+    color: #3b8e46;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 
-.strong-view.wpmtst-default .wpmtst-testimonial {
-    border: none;
-}
+
+
+
 

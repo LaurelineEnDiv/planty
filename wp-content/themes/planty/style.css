@@ -8,7 +8,11 @@
  Version:      1.0.0
 */
 
-[data-vertical-spacing*="bottom"], .has-background:is(p, .wp-block-group) {
+[data-vertical-spacing*="top"] {
+    padding-top: 0 !important; 
+}
+
+[data-vertical-spacing*="bottom"], .has-background:is(p, .wp-block-group):last-child {
     padding-bottom: 0 !important; 
 }
 
@@ -21,6 +25,37 @@
     font-size: 30px;
     font-weight: 700;
 }
+
+.nous-rencontrer {
+    padding-bottom: 3em !important;
+}
+
+.tmm .tmm_member, .tmm .tmm_member .tmm_photo {
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+}
+
+span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
+    font-family: Syne !important;
+    color: black !important;
+}
+
+.wpforms-submit-container {
+    text-align: center;
+}
+
+.wpforms-submit {
+    padding: 1em 2em !important;
+}
+
+#wpforms-127 {
+    margin-bottom: 5em;
+}
+
+
+
+
 
 
 

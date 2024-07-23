@@ -53,6 +53,36 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
     margin-bottom: 5em;
 }
 
+.form-container {
+   color: white;
+}
+
+.form-container p {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0;
+ }
+
+.form-container input {
+    background-color: white !important;
+    border: none !important;
+    border-radius: 7px !important;
+    margin-bottom: 1em;
+ }
+
+ .separator {
+    margin : 0 30px !important;
+ }
+
+.button-commander {
+    text-align: center;
+}
+
+
+
+
+
+
 
 
 

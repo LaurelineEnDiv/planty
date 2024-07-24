@@ -8,6 +8,31 @@
  Version:      1.0.0
 */
 
+/*******Header********/
+
+#menu-navigation li:last-child {
+    background-color: #dc9f96;
+    padding: 0 4em;
+}
+
+#menu-navigation li:last-child a {
+    color: white;
+}
+
+[data-header*="type-1"] .ct-header [data-id="menu"] > ul > li > a {
+    text-transform: inherit;
+}
+
+div.ct-container-fluid {
+    margin-right: 0;
+}
+
+/*******CUSTOM BLOCS********/
+
+.wavy-background {
+    border-radius: 40% 20% 30% 30% / 0% 0% 8% 8% ;
+}
+
 [data-vertical-spacing*="top"] {
     padding-top: 0 !important; 
 }
@@ -15,6 +40,26 @@
 [data-vertical-spacing*="bottom"], .has-background:is(p, .wp-block-group):last-child {
     padding-bottom: 0 !important; 
 }
+
+/*******Visuel Canette********/
+
+.feuille-gauche {
+    position: relative;
+    left: 150px;	
+    top: 34px;
+}
+
+.feuille-droite {
+    position: relative;
+    right: 150px;	
+    top: 34px;
+}
+
+.can {
+    z-index: 1;
+}
+
+/******* AVIS ********/
 
 .strong-view.wpmtst-default .wpmtst-testimonial, .strong-view.wpmtst-default .wpmtst-testimonial-image img {
     border: none !important;
@@ -26,9 +71,7 @@
     font-weight: 700;
 }
 
-.nous-rencontrer {
-    padding-bottom: 3em !important;
-}
+/******* TEAM ********/
 
 .tmm .tmm_member, .tmm .tmm_member .tmm_photo {
 	border: none !important;
@@ -40,6 +83,8 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
     font-family: Syne !important;
     color: black !important;
 }
+
+/******* FORMULAIRES ********/
 
 .wpforms-submit-container {
     text-align: center;

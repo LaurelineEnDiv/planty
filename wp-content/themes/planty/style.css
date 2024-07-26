@@ -113,6 +113,30 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
     box-sizing: border-box; 
 }
 
+.image-texte {
+    position: relative;
+    display: inline-block;
+}
+
+.image-texte img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+    text-align: center;
+}
+
 .image {
     width: 192px;
     height: 128px;
@@ -171,6 +195,11 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
     box-sizing: border-box;
 }
 
+.column input[type="text"]:focus,
+.column input[type="email"]:focus {
+    background-color: white;
+}
+
 .separator-vertical {
     width: 1px; 
     background-color: white; 
@@ -190,6 +219,10 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
     padding: 15px 20px !important;
     background-color: #e0b9b4 !important;
     border-radius: 5px;
+}
+
+.bouton-commander:hover {
+    background-color: #c48783 !important; 
 }
 
 

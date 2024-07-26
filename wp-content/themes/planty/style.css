@@ -75,7 +75,7 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
     color: black !important;
 }
 
-/******* FORMULAIRES ********/
+/******* FORMULAIRE CONTACT ********/
 
 .wpforms-submit-container {
     text-align: center;
@@ -89,64 +89,57 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
     margin-bottom: 5em;
 }
 
-.form-container {
-   color: white;
-}
+/******* FORMULAIRE COMMANDE ********/
 
-.form-container p {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 0;
- }
-
-.form-container input {
-    background-color: white !important;
-    border: none !important;
-    border-radius: 7px !important;
-    margin-bottom: 1em;
- }
-
- .separator {
-    margin : 0 30px !important;
- }
-
-/******* COMMANDE ********/
-.command-form p {
+.command-form h2 {
     font-weight: 700;
     font-size: 30px;
     color: white;
 }
 
+.image-item br, .column br {
+    display: none;
+}
+
 .image-container {
     display: flex;
-    justify-content: space-between; /* Espacement égal entre les éléments */
-    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
-    margin: 20px 0; /* Marge autour du conteneur */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
 .image-item {
     text-align: center;
     flex-basis: 20%; /* Largeur de chaque élément pour s'adapter à 4 par ligne */
-    box-sizing: border-box; /* Inclut la marge et la bordure dans la largeur totale */
+    box-sizing: border-box; 
 }
 
 .image {
     width: 192px;
     height: 128px;
     display: block;
-    margin: 0 auto ; /* Centrage de l'image et marge en dessous */
+    margin: 0; /* Centrage de l'image */
 }
 
 .quantity {
-    width: 42px !important; 
+    width: 40px !important;
+    height : 54px !important; 
+    font-size: 16px;
+    font-weight: 400;
     background-color: white !important;
+    margin-top: 1em;
 }
 
-.commande-separator {
+.separator {
     width: 100%;
-    height: 2px; 
+    height: 1px; 
     background-color: white; 
-    margin-top: 2em;
+    margin: 2.5em 0;
+}
+
+.infos-livraison {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-columns {
@@ -160,39 +153,43 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
 .column {
     flex: 1; /* Les deux colonnes prennent une largeur égale */
     box-sizing: border-box;
-    padding: 10px;
+    padding: 5px;
 }
 
 .column label {
-    display: block;
-    margin: 10px 0 5px;
+    font-size: 20px !important;
+    font-weight: 400 !important;
 }
 
 .column input[type="text"],
 .column input[type="email"] {
     width: 100%;
-    padding: 8px;
+    height: 70px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 1em;
     box-sizing: border-box;
 }
 
 .separator-vertical {
-    width: 2px; 
+    width: 1px; 
     background-color: white; 
-    height: auto; /* Prend toute la hauteur du parent */
-    margin: 0 10px; /* Espacement entre les colonnes */
+    height: auto; 
+    margin: 0 10px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
 }
 
 .bouton-commander {
+    width: 100%;
     text-align: center;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    padding: 15px 20px !important;
+    background-color: #e0b9b4 !important;
     border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
 }
 
 

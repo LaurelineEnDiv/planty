@@ -90,8 +90,26 @@ if (! function_exists('blc_get_contacts_output')) {
 
 				foreach ($args['data'] as $single_layer) {
 			?>
-				<?php if (! $single_layer['enabled']) { continue; }?>
-				<li>
+				<?php 
+					if (! $single_layer['enabled']) {
+						continue;
+					}
+
+					$item_attr = [];
+
+					$item_attr['class'] = blocksy_visibility_classes(
+						blocksy_akg(
+							'visibility',
+							$single_layer,
+							[
+								'desktop' => true,
+								'tablet' => true,
+								'mobile' => true,
+							]
+						)
+					);
+				?>
+				<li <?php echo blocksy_attr_to_html($item_attr) ?>>
 					<?php
 						$link = esc_attr(blocksy_akg('link', $single_layer, ''));
 
@@ -147,7 +165,7 @@ if (! function_exists('blc_get_contacts_output')) {
 
 						if ($with_link) {
 							$icon_link_attr = [
-								'href' => $link,
+								'href' => do_shortcode($link),
 								'class' => 'ct-icon-container',
 								'aria-label' => blocksy_akg('title', $single_layer, '') . ' ' . $content
 							];

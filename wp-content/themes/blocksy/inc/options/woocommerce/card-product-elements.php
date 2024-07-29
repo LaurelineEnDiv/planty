@@ -222,6 +222,12 @@ $options = [
 									'prefix' => 'woo_categories',
 									'loader_selector' => '[data-products] > li'
 								]),
+								
+								blocksy_sync_whole_page([
+									'id' => 'woo_card_layout_meta',
+									'prefix' => 'woo_categories',
+									'loader_selector' => '[data-products] > li .entry-meta'
+								]),
 
 								[
 									'prefix' => 'woo_categories',
@@ -420,7 +426,7 @@ $options = [
 													]
 												),
 												'sync' => [
-													'id' => 'woo_card_layout_skip'
+													'id' => 'woo_card_layout_meta'
 												]
 											],
 
@@ -478,6 +484,14 @@ $options = [
 												'value' => 'yes',
 												'setting' => [ 'transport' => 'postMessage' ],
 												'desc' => __( 'Automatically hide "Add to cart" button after adding the product to cart.', 'blocksy' ),
+											],
+
+											'button_equal_alignment' => [
+												'label' => __( 'Equal Alignment', 'blocksy' ),
+												'type' => 'ct-switch',
+												'value' => 'yes',
+												'setting' => [ 'transport' => 'postMessage' ],
+												'desc' => __( 'Align all buttons on the same line, when positioned as the last element.', 'blocksy' ),
 											],
 
 											'spacing' => [

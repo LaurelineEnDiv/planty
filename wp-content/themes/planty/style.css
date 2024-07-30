@@ -17,9 +17,15 @@
 
 #menu-navigation li:last-child a {
     color: white;
+    font-weight: 700;
 }
 
-[data-header*="type-1"] .ct-header [data-id="menu"] > ul > li > a {
+#menu-navigation li:last-child a:hover {
+    color: black;
+}
+
+.ct-header [data-id="menu"] > ul > li > a ,
+.ct-footer [data-id="menu"] > ul > li > a {
     text-transform: inherit;
 }
 
@@ -59,9 +65,6 @@ div.ct-container-fluid {
     z-index: 1;
 }
 
-/******* AVIS ********/
-
-
 /******* TEAM ********/
 
 .tmm .tmm_member, .tmm .tmm_member .tmm_photo {
@@ -69,7 +72,6 @@ div.ct-container-fluid {
 	-webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
 }
-
 span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
     font-family: Syne !important;
     color: black !important;
@@ -82,11 +84,11 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
 }
 
 .wpforms-submit {
-    padding: 1em 2em !important;
+    padding: 1.5em 3.5em !important;
 }
 
 #wpforms-127 {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 /******* FORMULAIRE COMMANDE ********/
@@ -226,8 +228,97 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
 }
 
 
+/****** Media queries ***********/
 
+/* Medium devices */
+@media (max-width: 998px) {
 
+    div.ct-container-fluid {
+        margin-right: 3em;
+    }
+
+    .flower-background {
+        background-position: 5% 20% !important;
+    }
+
+    .bloc-team {
+        background-size: 18% !important;
+    }
+
+    .wp-container-core-group-is-layout-3.wp-container-core-group-is-layout-3 > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: 60% !important;
+    }
+
+    .bloc-contact-form {
+        background-position: 15% 76% !important;
+    }
+
+    /******* COMMANDE ********/
+    .image-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .image-item {
+        flex-basis: 45%; 
+        margin-bottom: 20px;
+    }
+
+    .image-texte img {
+        width: 100%;
+        max-width: none; 
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    /******* NOUS RENCONTRER ********/
+    .flower-background {
+        background-position: 50% 3% !important;
+    }
+
+    .flower-background h1 {
+        margin-top: 1.5em !important;
+    }
+
+    .bloc-team {
+        background-size: 16% !important;
+    }
+
+    .wp-container-core-group-is-layout-3.wp-container-core-group-is-layout-3 > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: 80% !important;
+    }
+
+    .bloc-contact-form {
+        background-position: 3% 76% !important;
+    }
+
+    /******* COMMANDER ********/
+
+    .command-form h2 {
+        text-align: center;
+    }
+
+    .image-container, .form-columns {
+        flex-direction: column;
+    }
+
+    .form-columns { 
+        align-items: center; 
+        gap: 0; 
+    }
+
+    .column {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .separator-vertical {
+        display: none; 
+    }
+}
 
 
 

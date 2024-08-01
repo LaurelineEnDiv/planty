@@ -147,10 +147,9 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
 }
 
 .quantity {
-    width: 40px !important;
+    width: 42px !important;
     height : 54px !important; 
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px !important;
     background-color: white !important;
     margin-top: 1em;
 }
@@ -273,9 +272,17 @@ span.tmm_fname, .tmm .tmm_plugin_f .tmm_job {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    /******* CE QU'ILS EN PENSENT ********/
+
+    .customer {
+        justify-content: center;
+    }
+
     /******* NOUS RENCONTRER ********/
+    
     .flower-background {
         background-position: 50% 3% !important;
+        padding-bottom: 2em !important;
     }
 
     .flower-background h1 {
